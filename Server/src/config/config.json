@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "chidinmaorajiaku",
+    "password": "corajiaku96",
+    "database": "TrackingApp",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "chidinmaorajiaku",
+    "password": "corajiaku96",
+    "database": "Tracking_App_Test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
+}

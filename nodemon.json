@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "ignore": ["dist", "node_modules", "tests"],
+  "exec": "babel-node Server/index.js",
+  "watch": ["Server/index.js", "Server/src"]
+}
