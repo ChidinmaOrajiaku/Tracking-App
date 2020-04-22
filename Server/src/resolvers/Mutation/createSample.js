@@ -1,11 +1,12 @@
+import {
+  AuthenticationError,
+} from 'apollo-server';
 import { samples } from '../sample';
 
-export const createSample = async (_, { input }) => {
+export const createSample = async (_, { input }, { loggedIn }) => {
   const { id, name } = input;
-  try {
-    samples.push({ id, name });
-    return samples;
-  } catch (err) {
-    console.log(err);
-  }
+  if (!loggedIn) return new AuthenticationError('Please log in');
+
+  samples.push({ id, name });
+  return samples;
 };
