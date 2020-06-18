@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ChidinmaOrajiaku/Tracking-App#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "apollo-server": "^2.12.0",
+    "apollo-server": "^2.14.2",
     "apollo-server-core": "^2.14.2",
     "apollo-server-express": "^2.12.0",
     "bcrypt": "^4.0.1",
